@@ -1,0 +1,3 @@
+select = [
+    "SIM103",  # return boolean comparison directly
+]

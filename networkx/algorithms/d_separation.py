@@ -206,10 +206,7 @@ def d_separated(G, x, y, z):
     disjoint_set.union(*x)
     disjoint_set.union(*y)
 
-    if x and y and disjoint_set[next(iter(x))] == disjoint_set[next(iter(y))]:
-        return False
-    else:
-        return True
+    return x and y and disjoint_set[next(iter(x))] == disjoint_set[next(iter(y))]
 
 
 @not_implemented_for("undirected")
